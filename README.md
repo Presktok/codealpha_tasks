@@ -1,35 +1,26 @@
-# Professional Todo List Application
+# Simple Todo List Application
 
-A feature-rich command-line Todo List application written in C++ that helps you manage your tasks efficiently with a beautiful console interface.
+A straightforward command-line Todo List application written in C++ that helps you manage your daily tasks efficiently.
 
-## 🌟 Features
+## Features
 
 - **Task Management**
-  - Add tasks with detailed information
+  - Add new tasks with description and category
   - Mark tasks as completed
-  - View all tasks in a formatted table
-  - Priority levels (1-5)
-  - Due date tracking
-  - Task categorization
+  - View all tasks in a simple list format
+  - Basic task categorization
 
 - **Data Persistence**
-  - Save tasks to file
-  - Load tasks from file
-  - Automatic data backup
+  - Save tasks to a text file
+  - Load tasks from a text file
+  - Automatic data storage
 
-- **User Interface**
-  - Colorful console interface
-  - Clear and organized menu system
-  - Formatted task display
-  - Intuitive navigation
-
-## 🛠️ Requirements
+## Requirements
 
 - C++ compiler (g++ or compatible)
-- Windows OS (for console colors)
-- Git (for version control)
+- Basic understanding of command-line interface
 
-## 📥 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -46,7 +37,7 @@ cd codealpha_tasks
 g++ todo.cpp -o todo
 ```
 
-## 🚀 Usage
+## Usage
 
 Run the program:
 ```bash
@@ -56,49 +47,54 @@ Run the program:
 ### Menu Options:
 1. **Add Task**
    - Enter task description
-   - Specify category
-   - Set due date (optional)
-   - Set priority level (1-5)
+   - Enter task category
 
 2. **Mark Task as Completed**
-   - View current tasks
-   - Select task to mark as completed
+   - Enter task number to mark as completed
 
 3. **View Tasks**
-   - See all tasks in a formatted table
-   - View task status, priority, and due dates
+   - See all tasks in a list format
+   - Shows task status (completed/pending)
+   - Displays task category
 
 4. **Save Tasks**
-   - Save current tasks to file
-   - Automatic backup of your todo list
+   - Save current tasks to tasks.txt
 
 5. **Load Tasks**
-   - Load previously saved tasks
-   - Restore your todo list
+   - Load tasks from tasks.txt
 
 6. **Exit**
-   - Save and close the application
+   - Close the application
 
-## 📝 File Format
+## File Format
 
 Tasks are saved in `tasks.txt` with the following format:
 ```
-description|category|due_date|priority|completed
+description|category|completed
 ```
 
-## 🤝 Contributing
+Example:
+```
+Buy groceries|Shopping|0
+Complete project|Work|1
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Project Structure
 
-## 📄 License
+- `todo.cpp` - Main source code file
+- `tasks.txt` - Data storage file
 
-This project is open source and available under the MIT License.
-
-## 👤 Author
+## Author
 
 - GitHub: [@Presktok](https://github.com/Presktok)
 
-## 🙏 Acknowledgments
+## Future Improvements
 
-- Thanks to all contributors
-- Inspired by the need for a simple yet powerful todo list manager 
+Potential enhancements for future versions:
+- Add due dates for tasks
+- Implement priority levels
+- Add task editing functionality
+- Add task deletion
+- Add task search functionality
+- Improve user interface with colors
+- Add task sorting options 
